@@ -1,0 +1,8 @@
+function go(){
+
+		var htmltemp=require('./htmlTemp')
+		htmltemp.IdCard();
+	     }
+exports.go=go;
+
+

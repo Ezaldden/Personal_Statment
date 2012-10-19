@@ -1,0 +1,146 @@
+//var server = require("./server.
+
+
+function Home(res){
+
+	res.writeHeader(200, {"Content-Type":"text/html"});
+	res.write( '<html>'+
+		'<head><title>Home Page</title></head>'+
+		'<body style="background-color:#787878">'+
+		'<Center><form method="Get" style="width:1075;background-color:#B8B8B8">'+
+		'<Center><span style="background-color:LightGrey ;font-family:Purisa; font-size:50px;font-weight:bold"  width=100>'+
+		'<b style="color:Red; font-size:80px">Hi</b> wikitechie, <b style="color:Red; font-size:80px">Hi</b> Guys <font size="50">!</font>'+
+		'</span></<Center></br></br>'+
+		'<span style="background-color:white; font-family:Purisa; font-size:22px; font-weight:bold"  width=100>'+
+		'Choose an order!</spain>'+
+		'<Center>'+
+		'<a href="http://localhost:7000/identity"><h1 style="font-family:UnGungseo; font-size:40px; color:Green">See my identity card</h1>'+
+		'</a>'+
+		'<div style="background-color:#787878">'+
+		'</br></div>'+
+		'<a href="http://localhost:7000/wikitechie"><h1 style="font-family:UnGungseo; font-size:40px; color:Green">See what we learned with wikitechie</h1>'+
+		'</a>'+
+		'<div style="background-color:#787878">'+
+		'</br></div>'+
+		'<a href="http://localhost:7000/NodeBeg"><h1 style="font-family:UnGungseo; font-size:40px; color:Green">See what wI liked in NodeBeginner Book</h1>'+
+		'</a>'+
+		'<div style="background-color:#787878">'+
+		'</br></div>'+
+		'</Center>'+
+		'</form></Center>'+		
+		'</body>'+
+		'</html>');
+	res.end();
+
+}
+
+
+
+function IdCard(res){
+
+	res.writeHeader(200, {"Content-Type":"text/html"});
+	res.write( '<html>'+
+		'<head><title>My identity Card!</title></head>'+
+		'<body style="background-color:#787878">'+
+		'<Center><form method="Get" style="width:1075;background-color:#B8B8B8">'+
+		'<Center><span style="background-color:LightGrey ;font-family:Purisa; font-size:50px;font-weight:bold"  width=100>'+
+		'<b style="color:Red; font-size:80px">Hi</b> wikitechie, <b style="color:Red; font-size:80px">Hi</b> Guys <font size="50">!</font>'+
+		'</span></Center></br></br>'+
+		'<span style="background-color:white ;font-family:Purisa; font-size:22px;font-weight:bold"  width=100>'+
+
+		'Here\'s my Identity card . . .</span>'+
+		'<table width:50% style="font-family:URW Bookman L; font-size:20" border="1" >'+
+		'<tr><td ><h3 style="color:Red">Name:</h3></td><td><h3 style="font-weight:bold"> Ezaldden Almaghout</h3></td>'+
+		'<td rowspan="7"><img src=\'Me.jpg\' width="320" heigh="200"></img></td></tr>'+
+		'<tr><td ><h3 style="color:Red">City:</h3></td><td><h3 style="font-weight:bold"> Salameah / Hamah</h3></td> </tr>'+
+		'<tr><td ><h3 style="color:Red">Study:</h3></td><td><h3 style="font-weight:bold"> IT @ SVU </h3></td> </tr>'+
+		'<tr><td ><h3 style="color:Red">Age:</h3></td><td><h3 style="font-weight:bold"> 23 years</h3></td> </tr>'+
+		'<tr><td ><h3 style="color:Red">Married:</h3></td><td><h3 style="font-weight:bold">No, and I won\'t ! </'+ 			'h3></td> </tr>'+
+		'<tr><td ><h3 style="color:Red">Military:</h3></td><td><h3 style="font-weight:bold">No, I haven\'t. No brother! </'+ 			'h3></td> </tr>'+
+		'<tr><td ><h3 style="color:Red">Hobbies:</h3></td><td><h3 style="font-weight:bold">BasketBall, swimming,'+
+		'Internet and cooking .</h3></td> </tr>'+
+		'</table>'+		
+		'</form></Center>'+		
+		'</body>'+
+		'</html>');
+	res.end();
+}
+
+
+
+function wikitechie(res){
+	res.writeHeader(200, {"Content-Type":"text/html"});
+	res.write('<html>'+
+		'<head><title>What I learned from wiki!</title></head>'+
+		'<body style="background-color:#787878">'+
+		'<Center><form method="Get" style="width:1075;background-color:#B8B8B8">'+
+		'<Center><span style="background-color:LightGrey ;font-family:Purisa; font-size:50px;font-weight:bold"  width=100>'+
+		'<b style="color:Red; font-size:80px">Hi</b> wikitechie, <b style="color:Red; font-size:80px">Hi</b> Guys <font size="50">!</font>'+
+		'</span></Center></br></br>'+
+		'<span style="background-color:white ;font-family:Century Schoolbook L; font-size:22px;font-weight:bold"  width=100>'+
+		'Here\'s I put what I learned graudally with '+
+		'<font style="background-color:Yellow;colre:Red ;font-family:Purisa; font-size:35px;font-weight:bold">'+
+		' wikitechieeeee'+
+		'<font size="15">!</font> :) </font></span>'+
+		'<table width:50% style="font-family:URW Bookman L; font-size:20" border="1" bgcolor="#F8F8F8">'+
+		'<tr><td style="color:Red; font-family:Purisa; font-width:bold; font-size:30px" align="center" >1st</td>'+
+			'<td align="center"><a href="https://youtube.com/watch?v=wI406qIMd3I" target="_blank">'+
+				'<h3 style="font-weight:bold; color:Green">Introduction to node.js</h3></a></td></tr>'+
+		'<tr><td style="color:Red; font-family:Purisa; font-width:bold; font-size:30px" align="center" >2nd</td>'+
+			'<td align="center"><a href="www.youtube.com/watch?v=InPnHKIVU7Y" target="_blank">'+
+				'<h3 style="font-weight:bold; color:Green">Callback and asynchronous consepts</h3></a></td></tr>'+
+		'<tr><td style="color:Red; font-family:Purisa; font-width:bold; font-size:30px" align="center" >3rd</td>'+
+			'<td align="center"><a href="http://youtube.com/watch?v=eLT9oN8ZL4w" target="_blank">'+
+				'<h3 style="font-weight:bold; color:Green"> Create my own server </h3></a></td></tr>'+
+		'<tr><td style="color:Red; font-family:Purisa; font-width:bold; font-size:30px" align="center" >4th</td>'+
+			'<td align="center"><a href="http://youtube.com/watch?v=GjwbkslFrcQ" target="_blank">'+
+				'<h3 style="font-weight:bold; color:Green"> Introduction to Nodelistu </h3></a></td></tr>'+
+		'<tr><td style="color:Red; font-family:Purisa; font-width:bold; font-size:30px" align="center" >5th</td>'+
+			'<td align="center"><a href="http://youtube.com/watch?v=ODdEemzhZgk" target="_blank">'+
+				'<h3 style="font-weight:bold; color:Green"> Introduction to github </h3></a></td>'+
+		'<tr><td style="color:Red; font-family:Purisa; font-width:bold; font-size:30px" align="center" >6th</td>'+
+			'<td align="center"><a href="http://google.com" target="_blank">'+
+				'<h3 style="font-weight:bold; color:Green"> Introduction to Node.js </h3></a></td>'+
+		'<tr><td style="color:Red; font-family:Purisa; font-width:bold; font-size:30px" align="center" >7th</td>'+
+			'<td align="center"><a href="http://google.com" target="_blank">'+
+				'<h3 style="font-weight:bold; color:Green"> Introduction to Node.js </h3></a></td>'+
+		'</table>'+
+		'</form></Center>'+		
+		'</body>'+
+		'</html>');
+	res.end();
+}
+function NodeBeg(res){
+
+	res.write('<html>'+
+		'<head><title>My identity Card!</title></head>'+
+		'<body style="background-color:#787878">'+
+		'<Center><form method="Get" style="width:1075;background-color:#B8B8B8">'+
+		'<Center><span style="background-color:LightGrey ;font-family:Purisa; font-size:50px;font-weight:bold"  width=100>'+
+		'<b style="color:Red; font-size:80px">Hi</b> wikitechie, <b style="color:Red; font-size:80px">Hi</b> Guys'+ 			'<font size="50">!</font>'+
+		'</span></Center></br></br></br>'+
+		'<Center><div style="background-color:white ;font-family:Purisa; font-size:18px;font-weight:bold">'+
+		'Basically, since the wikitickie\'s heroes advised me to read the <a style="background-color:white ;font-family:Purisa; font-size:22px;font-weight:bold"  width=100 href="http://NodeBeginner.org">The Node Beginner Book</a>, I decided to mention you about the points I think you must take a look and read carefully. Of course I\'m not the man who established <a style="background-color:white ;font-family:Purisa; font-size:22px;font-weight:bold"  width=100 href="http://Apple.com">Apple corporation</a>, but I wanna just share with you something I\'m very glad that I passed it. By the way, wikitechie, you were appreciated guys, seriously I\'m very proud to be having a contact with someones like you. wish you all the best.'+
+		'</div></Center>'+
+		'<div style="background-color:white ;font-family:Purisa; font-size:18px;font-weight:bold">'+
+		'</br>The titles which are very important, in my point of view, are:'+
+		'</br>      1- Building the application stack:'+
+		'</br>      2- Event-driven asynchronous callbacks:'+
+		'</br>      3- What\'s needed to "route" requests?'+
+		'</br>      4- Blocking and non-blocking'+
+		'</br></br>'+
+		'These titles with what follow them is what I loved, but for sure the whole page is important. As I mentioned you '+
+		'I  just wanted to sure you these, unfortunately I\'m not a wikitechie\'s man!'+
+		'</br>Much love'+
+		'</form></Center></br>Much love</br>Ezo . . .'+		
+		'</body>'+
+		'</html>');
+	res.end();
+}
+
+exports.Home=Home;
+exports.IdCard=IdCard
+exports.wikitechie=wikitechie;
+exports.NodeBeg=NodeBeg;
+
+

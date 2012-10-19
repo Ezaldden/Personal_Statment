@@ -1,0 +1,2 @@
+var wikit = require ('./htmlTemp');
+wikit.wikitichie();
